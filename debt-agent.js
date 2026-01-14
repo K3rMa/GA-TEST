@@ -3,7 +3,7 @@
 // Production webhook for Debt & Credit Chatbot (Singapore)
 // Use together with index.html that imports this file as a module
 
-const WEBHOOK_URL = 'https://n8ngc.codeblazar.org/webhook/9689c730-bc37-434b-8d31-3c3bf0e4e1b8';
+const WEBHOOK_URL = 'https://n8ngc.codeblazar.org/webhook-test/9689c730-bc37-434b-8d31-3c3bf0e4e1b8';
 
 export async function getAIResponse(userInput) {
   if (!userInput || typeof userInput !== 'string' || userInput.trim() === '') {
@@ -88,3 +88,4 @@ export async function getAIResponse(userInput) {
     return friendlyMessage + "\n\nPlease try again in a moment or refresh the page.";
   }
 }
+
